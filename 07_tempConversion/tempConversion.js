@@ -4,6 +4,7 @@ const convertToCelsius = function(tempCelcius) {
 
   const tempFarenheight = (tempCelcius - CONVERSION_OFFSET) * CONVERSION_FACTOR;
   
+  // Round to one decimal placee
   return Math.round(tempFarenheight * 10) / 10;
 };
 
@@ -13,6 +14,7 @@ const convertToFahrenheit = function(tempFarenheight) {
 
   const tempCelcius = (tempFarenheight  * CONVERSION_FACTOR + CONVERSION_OFFSET);
 
+  // Round to one decimal placee
   return Math.round(tempCelcius * 10) / 10;
 };
 
